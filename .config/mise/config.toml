@@ -1,0 +1,15 @@
+[tools]
+direnv = "latest"
+dotnet = "9"
+java = "temurin-21"
+gradle = "8"
+php = "8"
+node = "22"
+pnpm = "10"
+sbt = "latest"
+ruby = "3"
+uv = "latest"
+python = "3.13"
+
+[settings]
+disable_hints = ["outdated_bump"]

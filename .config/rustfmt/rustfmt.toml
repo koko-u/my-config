@@ -1,0 +1,38 @@
+# version 1.8.0
+
+unstable_features = true
+edition = "2021"
+
+#  let (lorem, ipsum, _, _) = (1, 2, 3, 4)
+# -> let (lorem, ipsum, ..) = (1, 2, 3, 4)
+condense_wildcard_suffixes = true
+
+# ドキュメントコメント内のコードブロックもフォーマットする
+format_code_in_doc_comments = true
+
+# 自動生成されたコード(先頭に@generatedとある)はフォーマットしない
+format_generated_files = false
+
+# 宣言マクロのメタ変数もフォーマットする
+format_macro_matchers = true
+format_macro_bodies = true
+
+# 文字列リテラルも最大桁数でフォーマットする
+format_strings = true
+
+# use を1行1アイテムで配置する
+imports_layout = "Horizontal"
+imports_granularity = "Item"
+# use を並べかえる
+reorder_imports = true
+# use をグループ化する
+group_imports = "StdExternalCrate"
+
+# impl ブロックのアイテムの並び順を揃える (false に戻した(
+reorder_impl_items = false
+
+# mod 宣言を並べかえる
+reorder_modules = true
+
+# struct の初期化フィールドの短絡化を強制する
+use_field_init_shorthand = true

@@ -1,0 +1,24 @@
+# yew-fmt 0.5.3
+
+unstable_features = true
+edition = "2021"
+
+condense_wildcard_suffixes = true
+format_code_in_doc_comments = true 
+format_generated_files = false
+format_macro_matchers = true
+format_macro_bodies = true
+format_strings = true
+imports_layout = "Horizontal"
+imports_granularity = "Item"
+reorder_imports = true
+group_imports = "StdExternalCrate"
+reorder_modules = true
+use_field_init_shorthand = true
+
+[yew]
+html_width = 80
+use_prop_init_shorthand = true
+unwrap_literal_prop_values = true
+self_close_elements = true
+html_flavor = "Ext"

@@ -1,0 +1,50 @@
+[user]
+    name = KOZAKI Tsuneaki
+    email = kozaki.tsuneaki@gmail.com
+
+[color]
+    ui = true
+
+[core]
+    editor = "code --disable-workspace-trust --new-window --wait"
+    quotation = false
+    pager = delta --side-by-side --syntax-theme gruvbox-dark
+    autocrlf = input
+
+[init]
+    defaultBranch = main
+
+[pull]
+    ff = only
+
+[push]
+    default = simple
+
+[diff]
+    tool = meld
+[difftool "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"
+
+[merge]
+    tool = meld
+[mergetool "meld"]
+    cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
+
+[alias]
+    co = checkout
+    ci = commit
+    cv = commit -v
+    sw = switch
+    st = status --short --branch 
+    br = branch --sort=authordate
+    branches = branch -a
+    stashes = stash list
+    remotes = remote -v 
+    unstage = reset -q HEAD --
+    discard = checkout -- 
+    amend = commit --amend 
+    current-branch = rev-parse --abbrev-ref HEAD
+    wdiff = diff --word-diff=color --unified=1
+    logline = log --oneline --stat --branches
+    ll = log --pretty=format:'%C(yellow)%h%C(red)%d\\ %C(reset)%s%C(blue)\\ [%cn]' --decorate --numstat
+    hist = log --pretty=format:'%C(blue)%h%C(reset) %C(green)%ad%C(reset) | %s%C(yellow)%d%C(reset) [%an]' --graph --date=short

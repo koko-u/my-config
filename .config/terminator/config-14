@@ -1,0 +1,28 @@
+[global_config]
+  title_use_system_font = False
+  title_font = 0xProto Nerd Font 14
+  putty_paste_style_source_clipboard = True
+[keybindings]
+  split_horiz = <Primary><Shift>o
+[profiles]
+  [[default]]
+    background_color = "#282828"
+    background_darkness = 0.85
+    background_type = transparent
+    cursor_blink = False
+    cursor_color = "#aaaaaa"
+    font = 0xProto Nerd Font Mono 14
+    foreground_color = "#ebdbb2"
+    use_system_font = False
+    bold_is_bright = True
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+      size = 1400, 1000
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+[plugins]

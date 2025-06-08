@@ -1,0 +1,36 @@
+{
+    "workbench.colorTheme": "Dracula Theme Soft",
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "'0xProto Nerd Font Mono','Fira Code','Droid Sans Mono', 'monospace', monospace",
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "smooth",
+    "editor.fontLigatures": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "workbench.iconTheme": "vs-nomo-dark",
+    "workbench.tree.indent": 4,
+    "security.workspace.trust.untrustedFiles": "open",
+    "hediet.vscode-drawio.resizeImages": null,
+    "git.openRepositoryInParentFolders": "never",
+    "Prettier-SQL.ignoreTabSettings": true,
+    "Prettier-SQL.keywordCase": "upper",
+    "Prettier-SQL.newlineBeforeSemicolon": true,
+    "Prettier-SQL.SQLFlavourOverride": "postgresql",
+    "Prettier-SQL.tabSizeOverride": 4,
+    "sqltools.format": {
+        "language": "pl/sql",
+        "linesBetweenQueries": 1,
+        "reservedWordCase": "upper"
+    },
+    "sqltools.highlightQuery": false,
+    "[sql]": {
+        "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+    },
+    "window.commandCenter": false,
+    "remote.defaultExtensionsIfInstalledLocally": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "GitHub.vscode-pull-request-github"
+    ]
+}
