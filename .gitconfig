@@ -8,8 +8,10 @@
 [core]
     editor = "code --disable-workspace-trust --new-window --wait"
     quotation = false
-    pager = delta --side-by-side --syntax-theme gruvbox-dark
+#    pager = delta --side-by-side --syntax-theme gruvbox-dark
     autocrlf = input
+[pager]
+    difftool = true
 
 [init]
     defaultBranch = main
@@ -21,9 +23,9 @@
     default = simple
 
 [diff]
-    tool = meld
-[difftool "meld"]
-    cmd = meld "$LOCAL" "$REMOTE"
+    tool = difftastic
+[difftool "difftastic"]
+    cmd = difft "$MERGED" "$LOCAL" "abcdef1" "100644" "$REMOTE" "abcdef2" "100644"
 
 [merge]
     tool = meld
@@ -48,3 +50,7 @@
     logline = log --oneline --stat --branches
     ll = log --pretty=format:'%C(yellow)%h%C(red)%d\\ %C(reset)%s%C(blue)\\ [%cn]' --decorate --numstat
     hist = log --pretty=format:'%C(blue)%h%C(reset) %C(green)%ad%C(reset) | %s%C(yellow)%d%C(reset) [%an]' --graph --date=short
+    # Difftastic aliases, so `git dlog` is `git log` with difftastic and so on.
+    dlog = -c diff.external=difft log --ext-diff
+    dshow = -c diff.external=difft show --ext-diff
+    ddiff = -c diff.external=difft diff
