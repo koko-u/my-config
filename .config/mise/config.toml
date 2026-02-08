@@ -1,15 +1,53 @@
 [tools]
+"cargo:atuin" = "latest"
+"cargo:bat" = "latest"
+"cargo:bottom" = "latest"
+"cargo:create-tauri-app" = "latest"
+"cargo:difftastic" = "latest"
+"cargo:dua" = "latest"
+"cargo:eza" = "latest"
+"cargo:fd-find" = "latest"
+"cargo:git-delta" = "latest"
+"cargo:gitnr" = "latest"
+"cargo:ideatopia-password_generator" = "latest"
+"cargo:jj-cli" = "latest"
+"cargo:just" = "latest"
+"cargo:procs" = "latest"
+"cargo:ripgrep" = "latest"
+"cargo:rnx" = "latest"
+"cargo:snp" = "latest"
+"cargo:sqlx-cli" = { version = "latest", default-features = false, features = "completions, openssl-vendored, postgres" }
+"cargo:tailspin" = "latest"
+"cargo:trunk" = "latest"
+"cargo:xh" = "latest"
+dbmate = "2"
 direnv = "latest"
-dotnet = "9"
-java = "temurin-21"
-gradle = "8"
-php = "8"
-node = "22"
+dotnet = "10"
+"github:cli/cli" = "latest"
+"github:tailwindlabs/tailwindcss" = "latest"
+go = "latest"
+gradle = "9"
+java = "temurin-25"
+jq = "latest"
+node = "24"
+"npm:@angular/cli" = "latest"
+"npm:@dbml/cli" = "latest"
+"npm:@openai/codex" = "latest"
+"pipx:djlint" = "latest"
 pnpm = "10"
-sbt = "latest"
-ruby = "3"
+python = "3.14"
 uv = "latest"
-python = "3.13"
+zig = "latest"
 
 [settings]
 disable_hints = ["outdated_bump"]
+idiomatic_version_file_enable_tools = []
+
+[settings.python]
+compile = false
+
+[settings.npm]
+package_manager = "pnpm"
+
+[env]
+

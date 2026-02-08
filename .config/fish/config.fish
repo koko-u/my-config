@@ -1,5 +1,15 @@
+# Fcitx5 IME のための環境変数設定
+# これらの変数は、アプリケーションが Fcitx5 をインプットメソッドとして認識するために必要です。
+# インタラクティブ/非インタラクティブに関わらず、常に設定されるべきです。
+set -x GTK_IM_MODULE fcitx
+set -x QT_IM_MODULE fcitx
+set -x XMODIFIERS @im=fcitx
+set -x INPUT_METHOD fcitx
+set -x SDL_IM_MODULE fcitx
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
+
     # rust
     if test -d "$HOME/.cargo"
         fish_add_path "$HOME/.cargo/bin"
@@ -72,5 +82,28 @@ if status is-interactive
     # add .local/bin to path
     if test -d "$HOME/.local/bin"
         fish_add_path "$HOME/.local/bin"
+    end
+
+    # tailspin
+    if type -q tailspin
+        alias tail=tspin
+    end
+
+    # lean
+    if test -d "$HOME/.elan"
+        fish_add_path "$HOME/.elan/bin"
+    end
+
+    # pnpm
+    set -gx PNPM_HOME "$HOME/.local/share/pnpm"
+    if not string match -q -- $PNPM_HOME $PATH
+        fish_add_path "$PNPM_HOME"
+    end
+    # pnpm end
+
+    # golang
+    if test -d "$HOME/go"
+        set -Ux GOPATH $HOME/go
+        fish_add_path $GOPATH/bin
     end
 end

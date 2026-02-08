@@ -1,7 +1,10 @@
 # version 1.8.0
 
 unstable_features = true
-edition = "2021"
+edition = "2024"
+
+# Combine control expressions with function calls.
+combine_control_expr = false
 
 #  let (lorem, ipsum, _, _) = (1, 2, 3, 4)
 # -> let (lorem, ipsum, ..) = (1, 2, 3, 4)

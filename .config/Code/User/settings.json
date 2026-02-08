@@ -1,6 +1,5 @@
 {
     "workbench.colorTheme": "Dracula Theme Soft",
-    "files.autoSave": "afterDelay",
     "editor.fontFamily": "'0xProto Nerd Font Mono','Fira Code','Droid Sans Mono', 'monospace', monospace",
     "editor.cursorStyle": "block",
     "editor.cursorBlinking": "smooth",
@@ -25,12 +24,51 @@
     },
     "sqltools.highlightQuery": false,
     "[sql]": {
-        "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+        "editor.defaultFormatter": "mtxr.sqltools"
     },
     "window.commandCenter": false,
     "remote.defaultExtensionsIfInstalledLocally": [
         "GitHub.copilot",
         "GitHub.copilot-chat",
         "GitHub.vscode-pull-request-github"
-    ]
+    ],
+    "chat.agent.enabled": false,
+    "chat.commandCenter.enabled": false,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "google-translate.firstLanguage": "ja",
+    "google-translate.maxSizeOfResult": 1000,
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 16,
+    "debug.console.fontSize": 16,
+    "scm.inputFontSize": 14,
+    "chat.fontSize": 14,
+    "pgsql.serverGroups": [
+        {
+            "name": "Servers",
+            "id": "7341E695-1274-4F20-9DCC-5E4D30854A8F",
+            "isDefault": true
+        }
+    ],
+    "pgsql.connections": [
+        {
+            "id": "89E8DB7F-0441-456B-B065-DBF1FFC31C70",
+            "groupId": "7341E695-1274-4F20-9DCC-5E4D30854A8F",
+            "authenticationType": "SqlLogin",
+            "connectTimeout": 15,
+            "applicationName": "vscode-pgsql",
+            "clientEncoding": "utf8",
+            "sslmode": "prefer",
+            "savePassword": true,
+            "server": "localhost",
+            "user": "pgadmin",
+            "password": "",
+            "database": "riffmate_db",
+            "profileName": "riffmate_db",
+            "sshPassword": "",
+            "expiresOn": 0
+        }
+    ],
+    "git.autofetch": true,
+    "terminal.integrated.stickyScroll.enabled": false,
+    "tailwind-fold.autoFold": false
 }
