@@ -1,0 +1,19 @@
+[v1]
+"cargo-binstall 1.17.4 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-binstall"]
+"cargo-expand 1.0.120 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-expand"]
+"cargo-generate 0.23.7 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-generate"]
+"cargo-list 0.33.6 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-list"]
+"cargo-nextest 0.9.126 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-nextest"]
+"cargo-outdated 0.17.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-outdated"]
+"cargo-sort 2.0.2 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-sort"]
+"cargo-watch 8.5.3 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-watch"]
+"cargo-workspaces 0.4.2 (registry+https://github.com/rust-lang/crates.io-index)" = [
+    "cargo-workspaces",
+    "cargo-ws",
+]
+"mise 2025.12.12 (registry+https://github.com/rust-lang/crates.io-index)" = ["mise"]
+"wasm-bindgen-cli 0.2.106 (registry+https://github.com/rust-lang/crates.io-index)" = [
+    "wasm-bindgen",
+    "wasm-bindgen-test-runner",
+    "wasm2es6js",
+]
